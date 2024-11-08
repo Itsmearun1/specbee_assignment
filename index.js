@@ -51,9 +51,9 @@ let dataSet = [
 
 
   
-  let currentIndex = 0;
+let currentIndex = 0;
 
-function renderCarousel() {
+function showCarousel() {
   const carouselCards = document.querySelector('.carousel-cards');
   carouselCards.innerHTML = '';
 
@@ -85,7 +85,7 @@ function showbox(index) {
 
 document.querySelector('.next-btn').addEventListener('click', () => {
   currentIndex = (currentIndex + 4) % dataSet.length;
-  renderCarousel();
+  showCarousel();
 });
 
-renderCarousel();
+showCarousel();
