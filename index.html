@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specbee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="carousel-container">
+      <h2 class="text-md">View our Featured Speakers for the Event</h2>
+      <p class="text">
+        Speakers are core contributors and industry thought leaders working at
+        companies that push for innovation.
+      </p>
+
+      <div class="popup" id="popup">
+        <!-- <span class="close-btn" onclick="closePopup()">×</span> -->
+        <div class="popup-content">
+          <img id="popup-image" alt="Speaker Image" />
+          <div class="popup-details">
+            <h3 id="popup-name">Name</h3>
+            <p id="popup-role">Role</p>
+            <p id="popup-company">Company</p>
+            <div class="connects" id="popup-social">
+                <img src="/images/dropp.png" alt="drop">
+                <img src="/images/twitter.png" alt="twitter">
+                <img src="/images/linkedin.png" alt="linkedin">
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="desc-box">
+            <p id="popup-desc">Description</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel">
+        <button class="nav-btn prev-btn">&#10094;</button>
+        <div class="carousel-cards"></div>
+        <button class="nav-btn next-btn">&#10095;</button>
+      </div>
+
+      <button class="all-program-btn">See the Program</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
